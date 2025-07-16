@@ -1,0 +1,11 @@
+shiny
+pandas
+numpy
+matplotlib
+Pillow
+seaborn
+plotly
+statsbombpy
+mplsoccer
+scikit-learn
+kagglehub
