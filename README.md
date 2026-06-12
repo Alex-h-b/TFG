@@ -7,9 +7,9 @@
 
 ## 📋 Descripción del Proyecto
 
-[cite_start]Este repositorio contiene el código fuente de una **plataforma interactiva para el análisis de fútbol**, diseñada como una prueba de concepto orientada a cuerpos técnicos, analistas tácticos y departamentos de *scouting*[cite: 4]. [cite_start]El objetivo principal es integrar la ciencia de datos, el modelado estadístico avanzado y la visión por computadora en una herramienta centralizada y accesible, eliminando la dependencia de software privativo[cite: 4, 7].
+Este repositorio contiene el código fuente de una **plataforma interactiva para el análisis de fútbol**, diseñada como una prueba de concepto orientada a cuerpos técnicos, analistas tácticos y departamentos de *scouting*. El objetivo principal es integrar la ciencia de datos, el modelado estadístico avanzado y la visión por computadora en una herramienta centralizada y accesible, eliminando la dependencia de software privativo.
 
-[cite_start]La aplicación web ha sido construida íntegramente utilizando **Shiny for Python**, proporcionando una interfaz de usuario reactiva y dinámica para explorar métricas avanzadas y procesar vídeo de manera automatizada[cite: 6, 280].
+La aplicación web ha sido construida íntegramente utilizando **Shiny for Python**, proporcionando una interfaz de usuario reactiva y dinámica para explorar métricas avanzadas y procesar vídeo de manera automatizada.
 
 ---
 
@@ -18,21 +18,21 @@
 [cite_start]El proyecto se divide en tres módulos fundamentales independientes y complementarios:
 
 ### 1. Análisis de Competiciones Oficiales (Datos de Eventos)
-* [cite_start]**Fuente:** StatsBomb Open Data (vía API `statsbombpy`)[cite: 100].
-* [cite_start]**Alcance actual:** Análisis de los 51 partidos de la Eurocopa 2024[cite: 100, 139].
-* [cite_start]**Funcionalidades:** * Exploración granular de eventos (pases, disparos, recuperaciones) con coordenadas espaciales ($X, Y$)[cite: 107, 129].
-  * [cite_start]Visualización avanzada mediante **mplsoccer**, incluyendo mapas de calor de presión, redes de pases y mapas de disparos[cite: 129, 281].
-  * [cite_start]*Selector reactivo de goles:* Generación de un "freeze frame" táctico que muestra la posición exacta de todos los jugadores en el instante previo a un disparo convertido en gol[cite: 265, 272, 273].
+* **Fuente:** StatsBomb Open Data (vía API `statsbombpy`).
+* **Alcance actual:** Análisis de los 51 partidos de la Eurocopa 2024.
+* **Funcionalidades:** * Exploración granular de eventos (pases, disparos, recuperaciones) con coordenadas espaciales ($X, Y$).
+  * Visualización avanzada mediante **mplsoccer**, incluyendo mapas de calor de presión, redes de pases y mapas de disparos.
+  * *Selector reactivo de goles:* Generación de un "freeze frame" táctico que muestra la posición exacta de todos los jugadores en el instante previo a un disparo convertido en gol.
 
 ### 2. Evaluación de Jugadores y Modelos Predictivos (*Scouting*)
-* [cite_start]**Fuente:** Dataset de Kaggle basado en web scraping de FBref (temporada 2024-2025), cubriendo más de 2000 jugadores de las cinco grandes ligas europeas[cite: 110, 141].
+* **Fuente:** Dataset de Kaggle basado en web scraping de FBref (temporada 2024-2025), cubriendo más de 2000 jugadores de las cinco grandes ligas europeas.
 * **Modelado Predictivo:**
-  * [cite_start]**Predicción de Goles:** Algoritmo optimizado basado en **XGBoost** empleando variables de rendimiento histórico[cite: 2, 588].
-  * [cite_start]**Predicción de Asistencias:** Modelo basado en **Random Forest**[cite: 2, 588].
+  * **Predicción de Goles:** Algoritmo optimizado basado en **XGBoost** empleando variables de rendimiento histórico.
+  * **Predicción de Asistencias:** Modelo basado en **Random Forest**.
 * **Funcionalidades de Exploración:**
-  * [cite_start]Rankings dinámicos basados en un Índice de Rendimiento personalizado (con filtros mínimos para mitigar sesgos por muestras pequeñas)[cite: 313, 316].
-  * [cite_start]Gráficos interactivos de rendimiento: *Radar Plots* y *Pizza Charts* adaptados según la posición específica del futbolista[cite: 302, 317].
-  * [cite_start]Buscador avanzado por perfil estadístico y percentiles a través de controles deslizantes (*sliders*) reactivos[cite: 334, 342, 348].
+  * Rankings dinámicos basados en un Índice de Rendimiento personalizado (con filtros mínimos para mitigar sesgos por muestras pequeñas).
+  * Gráficos interactivos de rendimiento: *Radar Plots* y *Pizza Charts* adaptados según la posición específica del futbolista.
+  * Buscador avanzado por perfil estadístico y percentiles a través de controles deslizantes (*sliders*) reactivos.
 
 ### 3. Visión por Computadora Aplicada al Vídeo
 * [cite_start]**Tecnologías:** OpenCV, Ultralytics (YOLOv8) y la librería `supervision` de Roboflow[cite: 57, 171, 173].
