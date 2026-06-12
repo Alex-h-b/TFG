@@ -15,7 +15,7 @@ La aplicación web ha sido construida íntegramente utilizando **Shiny for Pytho
 
 ## 🏗️ Arquitectura y Bloques Principales
 
-[cite_start]El proyecto se divide en tres módulos fundamentales independientes y complementarios:
+El proyecto se divide en tres módulos fundamentales independientes y complementarios:
 
 ### 1. Análisis de Competiciones Oficiales (Datos de Eventos)
 * **Fuente:** StatsBomb Open Data (vía API `statsbombpy`).
@@ -35,13 +35,13 @@ La aplicación web ha sido construida íntegramente utilizando **Shiny for Pytho
   * Buscador avanzado por perfil estadístico y percentiles a través de controles deslizantes (*sliders*) reactivos.
 
 ### 3. Visión por Computadora Aplicada al Vídeo
-* [cite_start]**Tecnologías:** OpenCV, Ultralytics (YOLOv8) y la librería `supervision` de Roboflow[cite: 57, 171, 173].
+* **Tecnologías:** OpenCV, Ultralytics (YOLOv8) y la librería `supervision` de Roboflow.
 * **Canal de Procesamiento (*Pipeline*):**
-  1. [cite_start]**Detección de Objetos:** Identificación cuadro a cuadro de jugadores, porteros, árbitros y balón usando YOLOv8 especializado en deportes[cite: 173, 174, 204].
-  2. [cite_start]**Clasificación por Equipos:** Extracción de *bounding boxes* de los jugadores y paso por un clasificador secundario basado en color de la equipación para asignar pertenencia a un equipo[cite: 175, 177].
-  3. [cite_start]**Seguimiento Multiobjeto:** Algoritmo **ByteTrack** para mantener la identidad (ID persistente) de los elementos a lo largo de la secuencia de vídeo[cite: 180, 204].
-  4. [cite_start]**Homografía y Proyección Espacial:** Detección de puntos clave del terreno de juego para proyectar las posiciones tridimensionales a un plano táctico 2D (vista aérea)[cite: 207].
-  5. [cite_start]**Generación de Salidas Visuales:** Exportación de tres retransmisiones analíticas: vídeo anotado con ID/equipo, vídeo con **Diagramas de Voronoi dinámicos** (control territorial) y mapa táctico animado de vista zenital[cite: 200, 210, 212, 214].
+  1. **Detección de Objetos:** Identificación cuadro a cuadro de jugadores, porteros, árbitros y balón usando YOLOv8 especializado en deportes.
+  2. **Clasificación por Equipos:** Extracción de *bounding boxes* de los jugadores y paso por un clasificador secundario basado en color de la equipación para asignar pertenencia a un equipo.
+  3. **Seguimiento Multiobjeto:** Algoritmo **ByteTrack** para mantener la identidad (ID persistente) de los elementos a lo largo de la secuencia de vídeo.
+  4. **Homografía y Proyección Espacial:** Detección de puntos clave del terreno de juego para proyectar las posiciones tridimensionales a un plano táctico 2D (vista aérea).
+  5. **Generación de Salidas Visuales:** Exportación de tres retransmisiones analíticas: vídeo anotado con ID/equipo, vídeo con **Diagramas de Voronoi dinámicos** (control territorial) y mapa táctico animado de vista zenital.
 
 ---
 
@@ -49,11 +49,11 @@ La aplicación web ha sido construida íntegramente utilizando **Shiny for Pytho
 
 El ecosistema de librerías de Python requeridas incluye:
 
-* [cite_start]**Estructura Web:** `shiny`, `htmltools`, `faicons`[cite: 6, 280].
-* [cite_start]**Procesamiento de Datos:** `pandas`, `numpy`, `scikit-learn`, `xgboost`[cite: 2, 130].
-* [cite_start]**Visualización:** `matplotlib`, `seaborn`, `mplsoccer`[cite: 281, 332].
-* [cite_start]**Visión Artificial:** `opencv-python`, `ultralytics`, `supervision`, `inference-gpu`[cite: 171, 202].
-* [cite_start]**APIs de Datos:** `statsbombpy`[cite: 100].
+* **Estructura Web:** `shiny`, `htmltools`, `faicons`.
+* **Procesamiento de Datos:** `pandas`, `numpy`, `scikit-learn`, `xgboost`.
+* **Visualización:** `matplotlib`, `seaborn`, `mplsoccer`.
+* **Visión Artificial:** `opencv-python`, `ultralytics`, `supervision`, `inference-gpu`.
+* **APIs de Datos:** `statsbombpy`.
 
 ---
 
